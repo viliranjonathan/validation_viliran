@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('task_name')->nullable();
             $table->enum('status', ['Pending, On process', 'Complete', 'Cancelled' ])->nullable();
             $table->text('description')->nullable();
-            $table->date('published')->nullable();
             $table->date('deadline')->nullable();
             $table->date('completed_at')->nullable();
             $table->timestamps();
